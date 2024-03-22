@@ -56,7 +56,7 @@ Data creation API:
 `POST API   http://localhost:4000/event`
 
 
-Row data json
+Raw data json
 
 
 ```
@@ -77,7 +77,7 @@ Event Finder API:
 
 `GET API  http://localhost:4000/events/find?page=1`
 
-Row data json
+Raw data json
 
 
 ```
@@ -88,7 +88,7 @@ Row data json
 
 }
 ```
-
+Note : In this no need to take Raw data in commit current branch but previes branch we take latitude and longitude from the user that need to provide json.
 
 
 ### Live API Test Demo
