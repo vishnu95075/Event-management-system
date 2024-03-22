@@ -24,7 +24,9 @@ app.post('/event', (req, res) => {
 
 app.get('/events/find', (req, res) => {
   const sql = "SELECT event_name, city_name, date, time, latitude, longitude FROM event_table WHERE date BETWEEN CURRENT_DATE + INTERVAL '1' DAY AND CURRENT_DATE + INTERVAL '14' DAY ORDER BY date";
-  const { user_latitude, user_longitude } = req.body;
+  // const { user_latitude, user_longitude } = req.body;
+  const user_latitude = 40.7128;
+  const user_longitude = -74.0060;
   const { page } = req.query;
   db.query(sql, async (err, data) => {
     if (err) throw err;
