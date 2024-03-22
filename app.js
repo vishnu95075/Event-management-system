@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send("Event management system (GyanGrove) Ready to Deployment.");
+  res.send("Event management system (GyanGrove) Ready to Deployment");
 })
 
 app.post('/event', (req, res) => {
